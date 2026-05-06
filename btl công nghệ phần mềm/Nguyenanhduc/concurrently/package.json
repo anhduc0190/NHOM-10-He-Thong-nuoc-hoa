@@ -1,0 +1,12 @@
+{
+  "name": "project-iot-5-fullstack",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
+    "start": "cd backend && npm start",
+    "test": "echo \"Test API bằng Postman\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  }
+}

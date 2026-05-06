@@ -1,0 +1,27 @@
+{
+  "info": { "name": "Shop API", "_postman_id": "abc123" },
+  "item": [
+    {
+      "name": "Auth - Login",
+      "request": {
+        "method": "POST",
+        "url": "{{base_url}}/api/auth/login",
+        "body": { "mode": "raw", "raw": "{\"username\":\"admin\",\"password\":\"123456\"}" }
+      }
+    },
+    {
+      "name": "Products - GET All",
+      "request": { "method": "GET", "url": "{{base_url}}/api/products" }
+    },
+    {
+      "name": "Orders - Create",
+      "request": {
+        "method": "POST",
+        "url": "{{base_url}}/api/orders",
+        "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+        "body": { "mode": "raw", "raw": "{\"customerId\":1,\"items\":[{\"productId\":1,\"quantity\":2}]}" }
+      }
+    }
+  ],
+  "variable": [{ "key": "base_url", "value": "http://localhost:3001" }]
+}

@@ -1,0 +1,35 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "$2a$10$..hash..",
+      "role": "admin"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Cà phê sữa",
+      "price": 35000,
+      "stock": 100,
+      "image": "coffee.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Trà sữa",
+      "price": 45000,
+      "stock": 80,
+      "image": "tea.jpg"
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "name": "Nguyễn Văn A",
+      "phone": "0357xxxx",
+      "points": 150
+    }
+  ],
+  "orders": []
+}
